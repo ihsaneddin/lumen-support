@@ -9,7 +9,6 @@
             "email": "ihsaneddin@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "repositories": {
         "stateful-eloquent": {
             "type": "vcs",
@@ -33,5 +32,7 @@
         "files": [
             "app/Support/Helpers/helpers.php"
         ]
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
