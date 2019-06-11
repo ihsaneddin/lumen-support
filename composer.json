@@ -31,7 +31,10 @@
     "autoload": {
         "files": [
             "app/Support/Helpers/helpers.php"
-        ]
+        ],
+        "psr-4": {
+            "ihsaneddin\\lumen-support\\": "src/"
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

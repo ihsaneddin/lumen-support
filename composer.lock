@@ -12,16 +12,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ihsaneddin/stateful-eloquent.git",
-                "reference": "c17162f818206ef6000c54ef67fae8e7a7c416dc"
+                "reference": "77d16c099c0145bf95849a6e705040b4fcaf954a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ihsaneddin/stateful-eloquent/zipball/c17162f818206ef6000c54ef67fae8e7a7c416dc",
-                "reference": "c17162f818206ef6000c54ef67fae8e7a7c416dc",
+                "url": "https://api.github.com/repos/ihsaneddin/stateful-eloquent/zipball/77d16c099c0145bf95849a6e705040b4fcaf954a",
+                "reference": "77d16c099c0145bf95849a6e705040b4fcaf954a",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "^5.8",
                 "php": ">=5.6.4"
             },
             "require-dev": {
@@ -55,13 +54,12 @@
             "homepage": "https://github.com/mikerice/stateful-eloquent",
             "keywords": [
                 "eloquent",
-                "lumen",
                 "statemachine"
             ],
             "support": {
-                "source": "https://github.com/ihsaneddin/stateful-eloquent/tree/dev-illuminate-support-only"
+                "source": "https://github.com/ihsaneddin/stateful-eloquent/tree/remove"
             },
-            "time": "2019-04-08T13:41:06+00:00"
+            "time": "2019-06-11T08:15:15+00:00"
         },
         {
             "name": "doctrine/inflector",
