@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "91cad1c1af727e3c5dd22b333207fe7c",
+    "content-hash": "120e983c9d6e847393e990f166255fb6",
     "packages": [
         {
             "name": "acacha/stateful-eloquent",
