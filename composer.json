@@ -22,7 +22,7 @@
         "prettus/l5-repository": "^2.6",
         "prettus/laravel-validation": "^1.1",
         "thedevsaddam/lumen-route-list": "^2.0",
-        "acacha/stateful-eloquent": "dev-dev-illuminate-support-only",
+        "ihsaneddin/stateful-eloquent": "dev-dev-illuminate-support-only",
         "league/fractal": "^0.17.0"
     },
     "require-dev": {
