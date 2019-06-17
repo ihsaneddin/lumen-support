@@ -30,7 +30,7 @@
     },
     "autoload": {
         "files": [
-            "app/Support/Helpers/helpers.php"
+            "src/Helpers/helpers.php"
         ],
         "psr-4": {
             "ihsaneddin\\lumen-support\\": "src/"
