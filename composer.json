@@ -29,11 +29,12 @@
         "laravel/lumen-framework": "5.8.*"
     },
     "autoload": {
+        "classmap": ["src/"],
         "files": [
             "src/Helpers/helpers.php"
         ],
         "psr-4": {
-            "ihsaneddin\\lumen-support\\": "src/"
+            "Support\\": "src/"
         }
     },
     "minimum-stability": "dev",
