@@ -1,15 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: billy
- * Date: 11/04/19
- * Time: 14:34
- */
-
 namespace Support\Helpers;
 
+use Support\Workers\LogSlackWorker;
 
-use Jobs\LogQueueJob;
 use Illuminate\Support\Facades\Log;
 
 class LogSlack
@@ -17,7 +10,7 @@ class LogSlack
   public function __call($name, $arguments)
   {
     if(app()->environment(["staging", "production"])){
-      dispatch(new LogQueueJob($name, $arguments));
+      dispatch(new LogSlackWorker($name, $arguments));
     }
   }
 }
