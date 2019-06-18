@@ -21,6 +21,14 @@ trait CacheableFieldByRedisTrait {
     }
   }
 
+  public function removeFromCache(string $key){
+    if ($this->redis_connection_name){
+      return Redis::connection($this->redis_connection_name)->del($key);
+    }else{
+      return Redis::del($key);
+    }
+  }
+
   public function getRedisConnectionNameAttribute(){
     if(property_exists($this, "redis_connection_name")){
       return $this->redis_connection_name;
