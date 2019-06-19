@@ -1,5 +1,5 @@
 <?php
-namespace App\Facades;
+namespace Support\Facades;
 
 use Support\Helpers\LogSlack as LogSlackBase;
 
