@@ -402,7 +402,7 @@ abstract class BaseRepository extends Base implements BaseRepositoryInterface#, 
           $mixed = $this->model->newInstance()->forceFill($attributes)->makeVisible($this->model->getHidden())->toArray();
       }else{
           $model = $this->model->newInstance()->forceFill($attributes);
-          $model->addVisible($this->model->getHidden());
+          $model->makeVisible($this->model->getHidden());
           $mixed = $model->toArray();
       }
 
@@ -547,7 +547,7 @@ abstract class BaseRepository extends Base implements BaseRepositoryInterface#, 
       if( $this->versionCompare($this->app->version(), "5.2.*", ">") ){
         $instance->makeVisible($this->model->getHidden());
       }else{
-        $instance->addVisible($this->model->getHidden());
+        $instance->makeVisible($this->model->getHidden());
       }
       $mixed = $instance->toArray();
       #just insert file attributes for $attributes becase model#toArray not return it, fuckit
