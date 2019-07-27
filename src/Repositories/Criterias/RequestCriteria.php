@@ -234,10 +234,10 @@ class RequestCriteria extends BaseRequestCriteria {
   #
 
   protected function init_default_params(){
-    $default = [ "orderBy" => "created_at", "sortedBy" => "DESC", "searchJoin" => "and" ];
-    foreach ($default as $key => $value) {
-      if (is_null(request()->query($key)))
-        request()->query->add([$key => $value]);
-    }
+    // $default = [ "orderBy" => "created_at", "sortedBy" => "DESC", "searchJoin" => "and" ];
+    // foreach ($default as $key => $value) {
+    //   if (is_null(request()->query($key)))
+    //     request()->query->add([$key => $value]);
+    // }
   }
 }
