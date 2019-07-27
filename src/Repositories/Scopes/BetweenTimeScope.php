@@ -43,13 +43,13 @@ class BetweenTimeScope implements CriteriaInterface{
         $format = array_first($col);
       }
 
-      if (isset($this->params[$field])){
+      if (array_get($this->params, $field)){
 
         $params = $this->params[$field];
 
         if (is_array($params)){
 
-          if (isset($params['from'])){
+          if (array_get($params, 'from')){
             try{
               if(strtolower($format)  === "unix"){
                 $from = Carbon::createFromTimestamp($params['from']);
@@ -65,7 +65,7 @@ class BetweenTimeScope implements CriteriaInterface{
               $model = $model->where((new $class_name)->getTable(). '.' .$field, '>=', $from);
           }
 
-          if (isset($params['to'])){
+          if (array_get($params, 'to')){
             try{
               if(strtolower($format)  === "unix"){
                 $to = Carbon::createFromTimestamp($params['to']);

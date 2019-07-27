@@ -43,13 +43,13 @@ class BetweenNumberScope implements CriteriaInterface{
           $format = array_first($col);
         }
 
-        if (isset($this->params[$field])){
+        if (array_get($this->params, $field)){
 
           $params = $this->params[$field];
 
           if (is_array($params)){
 
-            if (isset($params['from'])){
+            if (array_get($params, 'from')){
               try{
                 $from = $this->format_value($format, $params['from']);
                 $model = $model->where($field, '>=', $from);
@@ -57,7 +57,7 @@ class BetweenNumberScope implements CriteriaInterface{
               catch(Exception $e){}
             }
 
-            if (isset($params['to'])){
+            if (array_get($params, 'to')){
               $to = $this->format_value($format, $params['to']);
               $model = $model->where($field, '<=', $to);
             }
