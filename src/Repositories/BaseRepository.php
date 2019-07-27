@@ -165,7 +165,7 @@ abstract class BaseRepository extends Base implements BaseRepositoryInterface#, 
   public function boot()
   {
     $this->pushCriteria(app(RequestCriteria::class));
-    $this->pushCriteria(BetweenTimeScope::class);
+    //$this->pushCriteria(BetweenTimeScope::class);
     //$this->pushCriteria(app('Repositories\RequestCriteria'));
   }
 

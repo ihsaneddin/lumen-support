@@ -51,7 +51,11 @@ class BetweenTimeScope implements CriteriaInterface{
 
           if (isset($params['from'])){
             try{
-              $from = Carbon::createFromFormat($format, $params['from']);
+              if(strtolower($format)  === "unix"){
+                $from = Carbon::createFromTimestamp($params['from']);
+              }else{
+                $from = Carbon::createFromFormat($format, $params['from']);
+              }
             }
             catch(Exception $e){
               try{$from = Carbon::parse($params["from"]);}
@@ -63,7 +67,11 @@ class BetweenTimeScope implements CriteriaInterface{
 
           if (isset($params['to'])){
             try{
-              $to = Carbon::createFromFormat($format, $params['to']);
+              if(strtolower($format)  === "unix"){
+                $to = Carbon::createFromTimestamp($params['to']);
+              }else{
+                $to = Carbon::createFromFormat($format, $params['to']);
+              }
             }
             catch(Exception $e){
               try{$from = Carbon::parse($params["to"]);}
