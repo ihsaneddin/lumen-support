@@ -196,19 +196,19 @@ abstract class BaseRepository extends Base implements BaseRepositoryInterface#, 
     return $this;
   }
 
-  public function count() {
+  // public function count() {
 
-      $this->applyCriteria();
-      $this->applyScope();
+  //     $this->applyCriteria();
+  //     $this->applyScope();
 
-      $result = $this->model->count();
+  //     $result = $this->model->count();
 
-      $this->resetModel();
-      $this->resetScope();
+  //     $this->resetModel();
+  //     $this->resetScope();
 
-      return $result;
+  //     return $result;
 
-  }
+  // }
 
   public function delete($id)
   {
